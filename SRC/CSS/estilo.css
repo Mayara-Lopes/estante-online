@@ -1,0 +1,127 @@
+/*customizando body*/
+body {
+    background-image: url(../imagens/fundoSite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 50px 0 50px;
+}
+/*customizando header*/
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+/*customizando <h1>*/
+.cabecalho .titulo {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 65px;
+    color: rgb(247, 227, 201);
+}
+/*customizando main*/
+.corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 60px 0;
+}
+/*customizando <ul>*/
+.lista-livros {
+    width: 50%;
+    height: 680px;
+    position: relative;
+}
+/*customizando <li>*/
+.livro {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgb(243, 230, 212);
+ 
+}
+/*expondo somente um livro por vez*/
+.livro.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+/*espaçamento da div de título do livro*/
+.nome-livro {
+    margin-top: 10px;
+}
+/*customizando <h3>*/
+.nome {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: bolder;
+    font-size: 25px;
+}
+/*customizando imagem dos livros*/
+.img-livro {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    width: 200px;
+    border-radius: 15px;
+}
+/*customizando <p>*/
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 8px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+/*espaçamento da div de link para compra*/
+.compra {
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+/*customizando <a>*/
+.link {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+/*customizando <i>*/
+.icone {
+    color: black;
+}
+/*customizando button*/
+.btn-seta {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    box-shadow: rgba(167, 168, 105, 0.507) 0px 8px 24px;
+    background-color: rgba(206, 139, 85, 0.726);
+    transition: background-color 0.2s ease-in-out;
+}
+/*customizando button ao passar por cima o mouse*/
+.btn-seta:hover {
+    background-color: rgba(134, 81, 53, 0.932);
+}
+/*customizando button de voltar*/
+.botao-voltar {
+    transform: rotate(180deg);
+}
+
+/*customizando footer*/
+footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: rgb(247, 217, 176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
